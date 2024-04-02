@@ -16,9 +16,14 @@ public class login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         findViewById(R.id.register).setOnClickListener(v->{
-//            Intent intent =new Intent();
             startActivity(new Intent(this, signin.class));
             finish();
+        });
+
+        findViewById(R.id.loginBtn).setOnClickListener(v->{
+            startActivity(new Intent(this, MainActivity.class));
+            finish();
+
         });
     }
 }

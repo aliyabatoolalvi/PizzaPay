@@ -20,10 +20,11 @@ public class signin extends AppCompatActivity {
         setContentView(R.layout.activity_signin);
         findViewById(R.id.login).setOnClickListener(v->{
 //            Intent intent =new Intent();
-            startActivity(new Intent(this, signin.class));
+            startActivity(new Intent(this, login.class));
             finish();
 
         });
+
 //        findViewById(R.id.login).setPaintFlags(Paint.UNDERLINE_TEXT_FLAG);
     }
 }
