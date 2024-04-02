@@ -1,5 +1,6 @@
 package com.aliya.pizzapay;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -14,6 +15,10 @@ public class login extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-
+        findViewById(R.id.register).setOnClickListener(v->{
+//            Intent intent =new Intent();
+            startActivity(new Intent(this, signin.class));
+            finish();
+        });
     }
 }
