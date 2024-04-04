@@ -38,6 +38,16 @@ dependencies {
 
     implementation(libs.lottie.v640)
 
+    implementation(libs.retrofit)
+    implementation(libs.okio)
+    implementation(libs.okhttp)
+    implementation("com.squareup.retrofit2:converter-gson:2.11.0")
+    implementation("com.squareup.retrofit2:converter-scalars:2.11.0")
+    implementation("com.squareup.okhttp3:logging-interceptor:4.12.0")
+    implementation("com.fasterxml.jackson.core:jackson-databind:2.17.0")
+
+
+
 
     implementation(libs.appcompat)
     implementation(libs.material)
