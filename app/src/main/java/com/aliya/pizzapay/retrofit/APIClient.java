@@ -25,7 +25,7 @@ public class APIClient {
                 .create();
         if (retrofit == null)
             retrofit = new Retrofit.Builder()
-                    .baseUrl("http://192.168.137.1/pizzapay/api/loadProducts.php")
+                    .baseUrl("http://192.168.137.1/pizzapay/api/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .client(client)
                     .build();
