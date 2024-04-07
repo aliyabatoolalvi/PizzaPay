@@ -2,11 +2,13 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_width="250dp"
+    android:layout_height="wrap_content"
+    android:id="@+id/post"
+    >
 
     <ImageView
-        android:id="@+id/imageView3"
+        android:id="@+id/itemimg"
         android:layout_width="180dp"
         android:layout_height="180dp"
         android:elevation="10dp"
@@ -18,64 +20,83 @@
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
-        android:layout_width="wrap_content"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="75dp"
         android:elevation="5dp"
-        app:cardBackgroundColor="#F6CAFD"
-        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="27dp"
         app:cardElevation="6dp"
         app:cardUseCompatPadding="true"
+        app:contentPaddingBottom="30dp"
         app:contentPaddingTop="100dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="17dp"
+        >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/constraintLayout"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
 
 
             <TextView
                 android:id="@+id/title"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="29dp"
-                android:layout_marginLeft="29dp"
-                android:layout_marginEnd="29dp"
-                android:layout_marginRight="29dp"
-                android:layout_marginBottom="41dp"
                 android:gravity="center"
-                android:text="Notes title here"
+                android:text="Pizza Steak"
                 android:textColor="@color/black"
-                android:textSize="30sp"
+                android:textSize="24sp"
                 android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="@+id/details"
-                app:layout_constraintStart_toStartOf="@+id/details" />
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
 
             <TextView
                 android:id="@+id/details"
-                android:layout_width="373dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="18dp"
-                android:layout_marginLeft="18dp"
+                android:layout_marginTop="1dp"
                 android:gravity="center"
-                android:text="Updated at date here"
+                android:text="Fatty pizza with meat pieces"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/title" />
 
             <TextView
-                android:id="@+id/date"
-                android:layout_width="0dp"
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="24dp"
                 android:gravity="center"
-                android:text="FEB 10, 2024"
-                app:layout_constraintEnd_toEndOf="@+id/details"
-                app:layout_constraintStart_toStartOf="@+id/details"
-                app:layout_constraintTop_toBottomOf="@+id/details" />
+                android:text="800 Rupees"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
+                app:layout_constraintTop_toBottomOf="@+id/details"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                app:layout_constraintBottom_toBottomOf="@+id/price"
+                app:layout_constraintEnd_toStartOf="@+id/price"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/price"
+                app:srcCompat="@drawable/baseline_add_shopping_cart_24" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>

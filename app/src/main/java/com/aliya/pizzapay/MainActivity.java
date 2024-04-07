@@ -38,7 +38,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(binding.getRoot());
         adapter = new ProductAdapter(this, data);
-        binding.recycler.setLayoutManager(new LinearLayoutManager(this));
+        LinearLayoutManager manager=new LinearLayoutManager(this);
+        manager.setOrientation(LinearLayoutManager.HORIZONTAL);
+        binding.recycler.setLayoutManager(manager);
         binding.recycler.setAdapter(adapter);
 
         List<Product> products = AppDatabase.getDatabase(this).productDao().getAll();
