@@ -81,7 +81,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
+    // a method to refresh the recycler view
     public void refresh(){
         data.clear();
         data.addAll(AppDatabase.getDatabase(this).productDao().getAll());

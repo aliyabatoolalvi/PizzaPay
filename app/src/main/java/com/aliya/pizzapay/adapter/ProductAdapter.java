@@ -47,7 +47,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductViewHolder> {
         holder.details.setText(Product.getDetails());
         holder.price.setText(Product.getPrice() + " Rs");
         holder.add.setImageResource(R.drawable.baseline_add_shopping_cart_24);
-        Picasso.get().load("http://192.168.137.1/pizzapay/api/" + Product.getImg()).into(holder.itemimg);
+        Picasso.get().load("http://192.168.137.1/pizzapay/images/" + Product.getImg()).into(holder.itemimg);
 
     }
     @Override
