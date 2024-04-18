@@ -73,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
                 }
 
             }
-
             @Override
             public void onFailure(Call<List<Product>> call, Throwable t) {
                 Toast.makeText(MainActivity.this, "Error: "+t.getMessage(), Toast.LENGTH_SHORT).show();
