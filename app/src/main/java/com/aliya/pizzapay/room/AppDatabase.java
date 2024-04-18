@@ -16,6 +16,7 @@ public abstract class AppDatabase extends RoomDatabase {
     private static volatile AppDatabase INSTANCE;
     
     public static AppDatabase getDatabase(final Context context) {
+        // this is using the singleton pattern that only gives 1 same instance after its 1st creation
         if (INSTANCE == null) {
             synchronized (AppDatabase.class) {
                 if (INSTANCE == null) {
