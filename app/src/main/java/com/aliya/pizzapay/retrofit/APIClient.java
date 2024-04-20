@@ -23,6 +23,8 @@ public class APIClient {
         Gson gson = new GsonBuilder()
                 .setLenient()
                 .create();
+
+
         if (retrofit == null)
             retrofit = new Retrofit.Builder()
                     .baseUrl("http://192.168.137.1/pizzapay/api/")
