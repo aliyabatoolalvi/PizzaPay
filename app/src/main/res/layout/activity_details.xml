@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Details">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pizzaxircle" />
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:rotation="180"
+        android:src="@drawable/back_circle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/fvt"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/fvt_empty"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="414dp"
+        android:layout_height="382dp"
+        android:layout_marginTop="48dp"
+        android:adjustViewBounds="true"
+        android:padding="0dp"
+        android:scaleType="fitCenter"
+        android:transitionName="image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/pizza" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Title of product"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.19"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/prodetails"
+        android:layout_width="344dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="24dp"
+        android:lineBreakStyle="loose"
+        android:text="Italian pizza made with tomatoes, basil, special sauce and lots of cheese. In many countries, it is known as tomato pizza. Like other pizzas, there is no mention of meat and chicken and their products such as sausage and sausage on this pizza."
+        android:textColor="#717171"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="77dp"
+        android:background="#F8A742"
+        tools:layout_editor_absoluteX="190dp"
+        tools:layout_editor_absoluteY="722dp" />
+
+    <Button
+        android:id="@+id/addtocart"
+        android:layout_width="290dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="28dp"
+        android:backgroundTint="@color/theme"
+        android:text="+ Add to cart"
+        android:textAllCaps="false"
+        app:cornerRadius="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="819dp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1400 Rs"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="76dp"
+        tools:layout_editor_absoluteY="748dp" />
+
+    <Button
+        android:id="@+id/medium"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/size"
+        android:text="M"
+
+        tools:layout_editor_absoluteX="278dp"
+        tools:layout_editor_absoluteY="735dp" />
+
+    <Button
+        android:id="@+id/small"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="S"
+        android:background="@drawable/size"
+        tools:layout_editor_absoluteX="222dp"
+        tools:layout_editor_absoluteY="735dp" />
+
+    <Button
+        android:id="@+id/large"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:text="L"
+        tools:layout_editor_absoluteX="337dp"
+        tools:layout_editor_absoluteY="735dp"
+        android:background="@drawable/size"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
